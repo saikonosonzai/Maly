@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #101F26;
+
+    font-family: "Baskerville Old Face", serif;
+    color: #FFFF;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #223440;
+    height: auto;
+    min-height: 2rem;
+    width: 100%;
+    padding: .5rem;
+}
+
+nav span {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 70%;
+
+    font-size: 2vw;
+}
+
+nav span img{
+    height: auto;
+    max-width: 10%;
+}
