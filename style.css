@@ -1,15 +1,23 @@
-body{
+*{
 
+    overflow-x: hidden;
+}
+
+body{
     margin: 0;
     padding: 0;
     background-color: #101F26;
 
     font-family: "Baskerville Old Face", serif;
     color: #FFFF;
+
+
 }
 
 header{
+    /*
     margin-bottom: 15vh;
+     */
 }
 
 nav {
@@ -86,10 +94,7 @@ nav span img{
 
 
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
 }
 
 main h1{
@@ -114,21 +119,45 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 70vw;
+    width: 100vw;
+
 }
 
 .card{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
     height: auto;
     padding: 2vh;
 
     border-radius: 1rem;
-    background-color: #223440;
 }
 
 .secondary{
     font-size: 1.5vw;
+}
+
+.scroll-wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+
+    scroll-snap-type: y proximity;
+}
+
+.scroll-section{
+    height: 100vh;
+    scroll-snap-align: start;
+    &:nth-child(even){
+        background-color: #223440;
+    }
+}
+
+.li_col{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5%;
+    font-size: 2vw;
 }
