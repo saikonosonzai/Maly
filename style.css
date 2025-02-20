@@ -28,7 +28,7 @@ nav {
     background-color: #223440;
     max-height: 5rem;
     min-height: 2rem;
-    width: 100%;
+    width: 100vw;
     padding: .5rem;
 }
 
@@ -48,21 +48,24 @@ nav span {
 
 nav div{
     position: relative;
+    display: flex;
+    justify-content: center;
     margin-left: auto;
-    margin-right: 5vw;
-    width: 80%;
+    width: 90%;
 }
+
 nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
+    width: 100%;
+    padding: 0;
 }
 
 
 
-nav li{
-    max-font-size: 5vw;
+nav a{
+    font-size: 3vw;
     color: #FFFF;
     list-style: none;
 }
@@ -70,7 +73,7 @@ nav li{
 a{
     color: #FFFF;
     text-decoration: none;
- }
+}
 
 a:hover{
     color: #ACCCD9;
@@ -101,7 +104,7 @@ main h1{
     font-size: 4vw;
 }
 
-main p, a{
+main p, main a{
     font-size: 2.5vw;
 }
 
@@ -160,4 +163,37 @@ section{
     width: 100%;
     margin-top: 5%;
     font-size: 2vw;
+}
+
+@media (max-width: 600px) {
+
+    nav div{
+        position: relative;
+        padding-left: 5vw;
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        width: 80%;
+        padding: 0;
+    }
+
+    .card{
+        text-align: center;
+    }
+
+    main h1{
+        font-size: 4vh;
+    }
+
+    main p, main a{
+        font-size: 2.5vh;
+    }
+
+    .secondary{
+        font-size: 2vh;
+    }
 }
