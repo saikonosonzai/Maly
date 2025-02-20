@@ -30,6 +30,7 @@ nav {
     min-height: 2rem;
     width: 100vw;
     padding: .5rem;
+    z-index: 9999999999999;
 }
 
 nav span {
@@ -132,8 +133,10 @@ section{
     flex-direction: column;
     width: 70%;
     height: auto;
+    margin-bottom: 2rem;
     padding: 2vh;
 
+    background-color: #223440;
     border-radius: 1rem;
 }
 
@@ -154,6 +157,9 @@ section{
     scroll-snap-align: start;
     &:nth-child(even){
         background-color: #223440;
+        .card{
+            background-color: #101F26;
+        }
     }
 }
 
@@ -166,6 +172,10 @@ section{
 }
 
 @media (max-width: 600px) {
+
+    nav{
+
+    }
 
     nav div{
         position: relative;
@@ -182,7 +192,8 @@ section{
     }
 
     .card{
-        text-align: center;
+        text-align: left;
+
     }
 
     main h1{
